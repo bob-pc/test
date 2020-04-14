@@ -12,6 +12,6 @@ jobs:
           toPhoneNumber: '+1 801 898 3322'
           message: 'This is a test of new issue opened'
         env:
-         TWILIO_ACCOUNT_ID: AC0feddd51bea4ec5d37450dd89600be89
-         TWILIO_API_KEY: SK4f141018e8ca34d76e82b4dc88e0835f
-         TWILIO_API_SECRET: XwXKWneakeATpEl2wzA0t4orry66ujqM
+         TWILIO_ACCOUNT_ID: 'AC0feddd51bea4ec5d37450dd89600be89'
+         TWILIO_API_KEY: 'SK4f141018e8ca34d76e82b4dc88e0835f'
+         TWILIO_API_SECRET: 'XwXKWneakeATpEl2wzA0t4orry66ujqM'
