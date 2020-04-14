@@ -5,13 +5,13 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: contains(github.event.label.name, 'bug')  
+    if: contains(github.event.label.name, 'bob')  
     steps:
       - uses: twilio-labs/actions-sms@v1    
         with:
           fromPhoneNumber: '+1 971 407 1651'
           toPhoneNumber: '+1 801 898 3322'
-          message: 'This is a test of new issue opened'
+          message: 'A new bob issue opened by {{github.actor}}'
         env:
          TWILIO_ACCOUNT_SID: 'AC0feddd51bea4ec5d37450dd89600be89'
          TWILIO_API_KEY: 'SK4f141018e8ca34d76e82b4dc88e0835f'
