@@ -6,8 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - if: contains(github.event.label.name, 'bug')
       - uses: twilio-labs/actions-sms@v1
+      - if: contains(github.event.label.name, 'bug')      
         with:
           fromPhoneNumber: '+1 971 407 1651'
           toPhoneNumber: '+1 801 898 3322'
