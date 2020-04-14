@@ -1,11 +1,12 @@
 name: 'Send SMS'
 on:
   issues:
-    types: [opened, edited]
+    types: labeled
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - if: contains(github.event.label.name, 'bug')
       - uses: twilio-labs/actions-sms@v1
         with:
           fromPhoneNumber: '+1 971 407 1651'
