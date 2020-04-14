@@ -5,7 +5,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: contains(github.event.label.name, 'bug')
+    if: contains(github.event.label.name, 'level1')
     steps:
       - uses: twilio-labs/actions-sms@v1    
         with:
