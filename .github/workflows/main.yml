@@ -10,7 +10,7 @@ jobs:
       - uses: twilio-labs/actions-sms@v1    
         with:
           fromPhoneNumber: '+1 971 407 1651'
-          toPhoneNumber: '+1 801 898 3322'
+          toPhoneNumber: ${{ secrets.ONCALL }}
           message: 'A new issue opened by ${{github.actor}}.'
         env:
          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
